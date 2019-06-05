@@ -1,22 +1,20 @@
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AboutPage } from './about.page';
+import { PopmenuComponent } from './popmenu.component';
 
-describe('AboutPage', () => {
-  let component: AboutPage;
-  let fixture: ComponentFixture<AboutPage>;
+describe('PopmenuComponent', () => {
+  let component: PopmenuComponent;
+  let fixture: ComponentFixture<PopmenuComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AboutPage ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      declarations: [ PopmenuComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AboutPage);
+    fixture = TestBed.createComponent(PopmenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
